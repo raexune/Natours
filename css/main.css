@@ -357,9 +357,9 @@ body {
 
 .card__side {
   height: 50rem;
-  -webkit-transition: all .8sec;
-  transition: all .8sec;
-  position: absolut;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  position: absolute;
   top: 0;
   left: 0;
 }
