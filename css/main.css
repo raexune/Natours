@@ -351,6 +351,39 @@ body {
           transform: translate(-1.5rem) scale(1.03);
 }
 
+.card {
+  position: relative;
+}
+
+.card__side {
+  height: 50rem;
+  -webkit-transition: all .8sec;
+  transition: all .8sec;
+  position: absolut;
+  top: 0;
+  left: 0;
+}
+
+.card__side--front {
+  background-color: orangered;
+}
+
+.card__side--back {
+  background-color: green;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .card__side--front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
@@ -447,5 +480,11 @@ body {
 .section-features > * {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 20rem 5rem 20rem 5rem;
+  margin-top: -10rem;
 }
 /*# sourceMappingURL=main.css.map */
