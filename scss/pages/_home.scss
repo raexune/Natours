@@ -5,7 +5,7 @@
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 20rem 1rem;
     background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(../img/nat-4.jpg);
     background-size: cover;
     margin-top: -10rem;
@@ -19,6 +19,32 @@
 
 .section-tours {
     background-color: $color-gray-light-1;
-    padding: 20rem 5rem 20rem 5rem;
+    padding: 20rem 5rem 2rem 5rem;
     margin-top: -10rem;
+}
+
+.section-stories {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg, rgba($color-white, .8) 0%, rgba($color-white, .8) 50%, rgba($color-white, .0) 50%), url(/img/nat-10.jpg);
+    background-size: cover;
+    border-radius: 9px;
+    box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .5);
+    margin: 0 5rem;
+    height: 45rem;
+
+    &__form {
+        width: 50%;
+        padding: 3rem;
+    }
+
+
 }
