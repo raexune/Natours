@@ -1,14 +1,21 @@
 .footer {
     background-color: #333;
     color: $color-white;
-    height: 40rem;
 
-    &__logo-container {
-        display: flex;
-        justify-content: center;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+    &__logo {
+        @include respond(phone) {
+            width: 15rem;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
     }
+
+
 
     &__text {
         width: 50%;
@@ -17,11 +24,13 @@
 
     &__menu {
         width: 50%;
-
+        border-top: 1px solid $color-gray-dark;
+        padding-top: 2rem;
     }
 
 
     &__menu ul {
+
         list-style: none;
         display: flex;
         justify-content: space-evenly;
@@ -29,13 +38,30 @@
 
     &__text-container {
         display: flex;
+        gap: 2rem;
         justify-content: space-between;
+        padding-bottom: 5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
     }
 
     &__link {
         text-decoration: none;
         color: $color-white;
         cursor: pointer;
+    }
+
+    &__text {
+        border-top: 1px solid $color-gray-dark;
+        padding-top: 2rem;
+
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 
 

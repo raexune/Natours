@@ -20,6 +20,11 @@
             cursor: pointer;
         }
 
+        @include respond(tab-port) {
+            top: 2rem;
+            right: 2rem;
+        }
+
     }
 
     &__background {
@@ -34,6 +39,11 @@
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         // transform: scale(80);
+
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
 
     }
 

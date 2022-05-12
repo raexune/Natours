@@ -16,6 +16,8 @@
 */
 // 1em=16px
 
+//ORDER: Base + Typographie > general layout + grid > page layout > components
+
 @mixin respond($breakpoint) {
     @if $breakpoint==phone {
         @media (max-width: 37.5em) {

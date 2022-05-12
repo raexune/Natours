@@ -1,7 +1,11 @@
 .section-about {
     background-color: $color-gray-light-1;
-    padding: 20rem 5rem 20rem 5rem;
+    padding: 20rem 5rem;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 15rem 5rem;
+    }
 }
 
 .section-features {
@@ -9,8 +13,11 @@
     background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(../img/nat-4.jpg);
     background-size: cover;
     margin-top: -10rem;
-
     transform: skewY(-7deg);
+
+    @include respond(tab-port) {
+        padding: 15rem 1rem;
+    }
 
     &>* {
         transform: skewY(7deg);
@@ -21,6 +28,10 @@
     background-color: $color-gray-light-1;
     padding: 20rem 5rem 2rem 5rem;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 15rem 5rem 2rem 5rem;
+    }
 }
 
 .section-stories {
