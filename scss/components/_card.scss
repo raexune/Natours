@@ -28,6 +28,7 @@
         &--back {
             transform: rotateY(180deg);
 
+
             &-1 {
                 background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
             }
@@ -158,14 +159,7 @@
 }
 
 @include respond(tab-port) {
-
-    .grid-1-of-3 {
-        ;
-    }
-
-
     .card {
-        margin: 0 auto 0 15%;
         height: auto;
         border-radius: 0;
 
@@ -176,6 +170,10 @@
             width: 80%;
             transition: all .8s ease;
             position: relative;
+
+            @include respond(tab-port) {
+                width: 100%;
+            }
 
             &--back {
                 transform: rotateY(0);
