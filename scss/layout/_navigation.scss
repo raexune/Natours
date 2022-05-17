@@ -67,6 +67,10 @@
         list-style: none;
         text-align: center;
         width: 100%;
+
+        @include respond(tab-port) {
+            top: 30rem;
+        }
     }
 
     &__link {
